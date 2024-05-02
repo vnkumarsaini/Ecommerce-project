@@ -1,0 +1,17 @@
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.csproj.AssemblyReference.cache
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.AssemblyInfoInputs.cache
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.AssemblyInfo.cs
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.csproj.CoreCompileInputs.cache
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\bin\Debug\net6.0\Ecomm_project_01.DataAccess.deps.json
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\bin\Debug\net6.0\Ecomm_project_01.DataAccess.runtimeconfig.json
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\bin\Debug\net6.0\Ecomm_project_01.DataAccess.dll
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\bin\Debug\net6.0\Ecomm_project_01.DataAccess.pdb
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\bin\Debug\net6.0\Ecomm_project_01.Models.dll
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\bin\Debug\net6.0\Ecomm_project_01.Models.pdb
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.csproj.CopyComplete
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.dll
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\refint\Ecomm_project_01.DataAccess.dll
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.pdb
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\Ecomm_project_01.DataAccess.genruntimeconfig.cache
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.DataAccess\obj\Debug\net6.0\ref\Ecomm_project_01.DataAccess.dll

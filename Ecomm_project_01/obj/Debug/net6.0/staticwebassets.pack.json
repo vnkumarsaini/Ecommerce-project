@@ -1,0 +1,317 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Ecomm_project_01.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Ecomm_project_01.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\Images\\Product\\359774f6-2475-403f-af4e-52753efd5454.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\359774f6-2475-403f-af4e-52753efd5454.jpg"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\Images\\Product\\45d5e3cd-826f-400c-9618-3ba103effe16.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\45d5e3cd-826f-400c-9618-3ba103effe16.jpg"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\Images\\Product\\862681ff-d5c5-45cf-b4da-183f82aa2236.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\862681ff-d5c5-45cf-b4da-183f82aa2236.jpg"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\Images\\Product\\c22104fe-2bf6-49e8-9d37-e25b343b2e7d.jpg",
+      "PackagePath": "staticwebassets\\Images\\Product\\c22104fe-2bf6-49e8-9d37-e25b343b2e7d.jpg"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\Images\\successmsg.jpg",
+      "PackagePath": "staticwebassets\\Images\\successmsg.jpg"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\js\\Category.js",
+      "PackagePath": "staticwebassets\\js\\Category.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\js\\Company.js",
+      "PackagePath": "staticwebassets\\js\\Company.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\js\\CoverType.js",
+      "PackagePath": "staticwebassets\\js\\CoverType.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\js\\Product.js",
+      "PackagePath": "staticwebassets\\js\\Product.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\js\\User.js",
+      "PackagePath": "staticwebassets\\js\\User.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\js\\qr.js",
+      "PackagePath": "staticwebassets\\js\\qr.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\qrcode.js",
+      "PackagePath": "staticwebassets\\lib\\qrcode.js"
+    },
+    {
+      "Id": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01\\wwwroot\\lib\\qrcode.min.js",
+      "PackagePath": "staticwebassets\\lib\\qrcode.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Ecomm_project_01.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Ecomm_project_01.props",
+      "PackagePath": "build\\Ecomm_project_01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Ecomm_project_01.props",
+      "PackagePath": "buildMultiTargeting\\Ecomm_project_01.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Ecomm_project_01.props",
+      "PackagePath": "buildTransitive\\Ecomm_project_01.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

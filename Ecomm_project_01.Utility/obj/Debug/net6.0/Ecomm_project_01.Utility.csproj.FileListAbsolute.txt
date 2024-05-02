@@ -1,0 +1,12 @@
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\bin\Debug\net6.0\Ecomm_project_01.Utility.deps.json
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\bin\Debug\net6.0\Ecomm_project_01.Utility.dll
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\bin\Debug\net6.0\Ecomm_project_01.Utility.pdb
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\Ecomm_project_01.Utility.csproj.AssemblyReference.cache
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\Ecomm_project_01.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\Ecomm_project_01.Utility.AssemblyInfoInputs.cache
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\Ecomm_project_01.Utility.AssemblyInfo.cs
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\Ecomm_project_01.Utility.csproj.CoreCompileInputs.cache
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\Ecomm_project_01.Utility.dll
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\refint\Ecomm_project_01.Utility.dll
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\Ecomm_project_01.Utility.pdb
+C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Utility\obj\Debug\net6.0\ref\Ecomm_project_01.Utility.dll
