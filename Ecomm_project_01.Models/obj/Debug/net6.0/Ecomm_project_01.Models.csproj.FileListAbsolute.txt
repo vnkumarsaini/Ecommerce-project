@@ -10,3 +10,15 @@ C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Models\obj\D
 C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\refint\Ecomm_project_01.Models.dll
 C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\Ecomm_project_01.Models.pdb
 C:\OneDrive\Documents\Mvc Project\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\ref\Ecomm_project_01.Models.dll
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\bin\Debug\net6.0\Ecomm_project_01.Models.deps.json
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\bin\Debug\net6.0\Ecomm_project_01.Models.dll
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\bin\Debug\net6.0\Ecomm_project_01.Models.pdb
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\Ecomm_project_01.Models.csproj.AssemblyReference.cache
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\Ecomm_project_01.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\Ecomm_project_01.Models.AssemblyInfoInputs.cache
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\Ecomm_project_01.Models.AssemblyInfo.cs
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\Ecomm_project_01.Models.csproj.CoreCompileInputs.cache
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\Ecomm_project_01.Models.dll
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\refint\Ecomm_project_01.Models.dll
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\Ecomm_project_01.Models.pdb
+E:\file project\Ecomm_project_01\Ecomm_project_01\Ecomm_project_01.Models\obj\Debug\net6.0\ref\Ecomm_project_01.Models.dll

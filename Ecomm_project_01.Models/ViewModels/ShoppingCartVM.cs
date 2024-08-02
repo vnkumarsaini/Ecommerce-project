@@ -10,5 +10,6 @@ namespace Ecomm_project_01.Models.ViewModels
     {
         public IEnumerable<ShoppingCart> ListCart { get; set; }
         public OrderHeader OrderHeader { get; set; }
+
     }
 }

@@ -23,6 +23,8 @@ function loadDataTable() {
 <i class = "fas fa-edit"></i></a>
 <a class="btn btn-danger" onclick=Delete("/Admin/Product/Delete/${data}")>
 <i class ="fas fa-trash-alt"></i></a>
+<a href="/Admin/Product/Discontinued/${data}" class="btn btn-info">
+<i class = "fas fa-stop-circle"></i></a>
 </div>
 `;
                 }

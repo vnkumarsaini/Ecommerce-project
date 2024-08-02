@@ -26,11 +26,23 @@
                                     </h4>
                                 </div>
                                 <div class="row my-1">
+                                    <div class="col-8">
+                                        <select id="addressDropdown" class="form-control">
+                                            <option value="">Select a previous address...</option>
+                                            @foreach (var address in ViewBag.UserAddresses)
+                                            {
+                                                <option value="@address.Value">@address.Text</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row my-1">
                                     <div class="col-3">
                                         <label>Name</label>
                                     </div>
                                     <div class="col-9">
-                                        <input asp-for="@Model.OrderHeader.Name" type="text" class="form-control" />
+                                        <input id="name" asp-for="@Model.OrderHeader.Name" type="text" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="row my-1">
@@ -38,7 +50,7 @@
                                         <label>Phone</label>
                                     </div>
                                     <div class="col-9">
-                                        <input asp-for="@Model.OrderHeader.PhoneNumber" type="text" class="form-control" />
+                                        <input id="phone" asp-for="@Model.OrderHeader.PhoneNumber" type="text" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="row my-1">
@@ -46,7 +58,7 @@
                                         <label>Street Address</label>
                                     </div>
                                     <div class="col-9">
-                                        <input asp-for="@Model.OrderHeader.StreetAddress" type="text" class="form-control" />
+                                        <input id="street" asp-for="@Model.OrderHeader.StreetAddress" type="text" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="row my-1">
@@ -54,7 +66,7 @@
                                         <label>City</label>
                                     </div>
                                     <div class="col-9">
-                                        <input asp-for="@Model.OrderHeader.City" type="text" class="form-control" />
+                                        <input id="city" asp-for="@Model.OrderHeader.City" type="text" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="row my-1">
@@ -62,7 +74,7 @@
                                         <label>State</label>
                                     </div>
                                     <div class="col-9">
-                                        <input asp-for="@Model.OrderHeader.State" type="text" class="form-control" />
+                                        <input id="state" asp-for="@Model.OrderHeader.State" type="text" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="row my-1">
@@ -70,7 +82,7 @@
                                         <label>Postal Code</label>
                                     </div>
                                     <div class="col-9">
-                                        <input asp-for="@Model.OrderHeader.PostalCode" type="text" class="form-control" />
+                                        <input id="postalCode" asp-for="@Model.OrderHeader.PostalCode" type="text" class="form-control" />
                                     </div>
                                 </div>
                             </div>
@@ -130,3 +142,32 @@
         </div>
     </div>
 </form>
+
+
+@section Scripts{
+    <script>
+        document.getElementById('addressDropdown').addEventListener('change', function () {
+            var selectedAddress = this.value;
+            if (selectedAddress) {
+                var parts = selectedAddress.split(', ');
+                if (parts.length === 6) { // Ensure the split parts match your structure
+                    document.getElementById('name').value = parts[0];
+                    document.getElementById('phone').value = parts[1];
+                    document.getElementById('street').value = parts[2];
+                    document.getElementById('city').value = parts[3];
+                    document.getElementById('state').value = parts[4];
+                    document.getElementById('postalCode').value = parts[5];
+                }
+            } else {
+                // Clear the fields if 'Select a previous address...' is chosen
+                document.getElementById('name').value = '';
+                document.getElementById('phone').value = '';
+                document.getElementById('street').value = '';
+                document.getElementById('city').value = '';
+                document.getElementById('state').value = '';
+                document.getElementById('postalCode').value = '';
+                // Clear additional fields similarly
+            }
+        });
+    </script>
+}

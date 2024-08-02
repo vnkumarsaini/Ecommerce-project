@@ -10,7 +10,4 @@ namespace Ecomm_project_01.DataAccess.Repository.iRepository
     public interface IShoppingCartRepository:iRepository<ShoppingCart>
     {
     }
-
-
-
 }

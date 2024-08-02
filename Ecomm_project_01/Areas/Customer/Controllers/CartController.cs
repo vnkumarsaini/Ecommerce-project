@@ -16,6 +16,7 @@ using Twilio;
 using Twilio.Rest.Api.V2010.Account;
 using Ecomm_project_01.DataAccess.Repository;
 using Address = Ecomm_project_01.Models.Address;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Ecomm_project_01.Areas.Customer.Controllers
 {
@@ -146,17 +147,46 @@ namespace Ecomm_project_01.Areas.Customer.Controllers
             HttpContext.Session.SetInt32(SD.Ss_CartSessionCount, count);
             return RedirectToAction("Index");
         }
-       
-        public IActionResult Summary() 
+
+        //public IActionResult Summary() 
+        //{
+        //    var claimsIdentity = (ClaimsIdentity)(User.Identity);
+        //    var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+        //    ShoppingCartVM = new ShoppingCartVM()
+        //    {
+        //        ListCart = _unitOfWork.ShoppingCart.GetAll(lc => lc.ApplicationUserId == claims.Value, includeProperties: "Product"),
+        //        OrderHeader = new OrderHeader()
+        //    };
+        //    ShoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.ApplicationUser.FirstOrDeafault(au=>au.Id == claims.Value);
+
+        //    foreach (var list in ShoppingCartVM.ListCart)
+        //    {
+        //        list.Price = SD.GetPriceBasedOnQuantity(list.Count, list.Product.Price, list.Product.Price50, list.Product.Price100);
+        //        ShoppingCartVM.OrderHeader.OrderTotal = list.Price * list.Count;
+        //        if (list.Product.Description.Length > 100)
+        //        {
+        //            list.Product.Description = list.Product.Description.Substring(0, 99) + "....";
+        //        }
+        //    }
+        //    ShoppingCartVM.OrderHeader.Name = ShoppingCartVM.OrderHeader.ApplicationUser.Name;
+        //    ShoppingCartVM.OrderHeader.StreetAddress = ShoppingCartVM.OrderHeader.ApplicationUser.StreetAddress;
+        //    ShoppingCartVM.OrderHeader.State = ShoppingCartVM.OrderHeader.ApplicationUser.State;
+        //    ShoppingCartVM.OrderHeader.City = ShoppingCartVM.OrderHeader.ApplicationUser.City;
+        //    ShoppingCartVM.OrderHeader.PostalCode = ShoppingCartVM.OrderHeader.ApplicationUser.PostalCode;
+        //    ShoppingCartVM.OrderHeader.PhoneNumber = ShoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber;
+        //    return View(ShoppingCartVM);
+        //}
+        public IActionResult Summary()
         {
             var claimsIdentity = (ClaimsIdentity)(User.Identity);
             var claims = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-            ShoppingCartVM = new ShoppingCartVM()
+             var ShoppingCartVM = new ShoppingCartVM()
             {
                 ListCart = _unitOfWork.ShoppingCart.GetAll(lc => lc.ApplicationUserId == claims.Value, includeProperties: "Product"),
-                OrderHeader = new OrderHeader()
+                OrderHeader = new OrderHeader(),
+                //UserAddresses = _unitOfWork.Address.GetAll(a => a.ApplicationUserId == userId).ToList()
             };
-            ShoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.ApplicationUser.FirstOrDeafault(au=>au.Id == claims.Value);
+            ShoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.ApplicationUser.FirstOrDeafault(au => au.Id == claims.Value);
 
             foreach (var list in ShoppingCartVM.ListCart)
             {
@@ -167,13 +197,24 @@ namespace Ecomm_project_01.Areas.Customer.Controllers
                     list.Product.Description = list.Product.Description.Substring(0, 99) + "....";
                 }
             }
-            ShoppingCartVM.OrderHeader.Name = ShoppingCartVM.OrderHeader.ApplicationUser.Name;
-            ShoppingCartVM.OrderHeader.StreetAddress = ShoppingCartVM.OrderHeader.ApplicationUser.StreetAddress;
-            ShoppingCartVM.OrderHeader.State = ShoppingCartVM.OrderHeader.ApplicationUser.State;
-            ShoppingCartVM.OrderHeader.City = ShoppingCartVM.OrderHeader.ApplicationUser.City;
-            ShoppingCartVM.OrderHeader.PostalCode = ShoppingCartVM.OrderHeader.ApplicationUser.PostalCode;
-            ShoppingCartVM.OrderHeader.PhoneNumber = ShoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber;
+            var addresses = _unitOfWork.OrderHeader.GetAll(o => o.ApplicationUserId == claims.Value)
+                 .Select(o => new
+                 {
+                     o.Name,
+                     o.PhoneNumber,
+                     o.StreetAddress,
+                     o.City,
+                     o.State,
+                     o.PostalCode,
+                     FullAddress = $"{o.Name}, {o.PhoneNumber}, {o.StreetAddress}, {o.City}, {o.State}, {o.PostalCode}"
+                 })
+                 .Distinct()
+                 .ToList();
+
+            ViewBag.UserAddresses = new SelectList(addresses, "FullAddress", "FullAddress");
+
             return View(ShoppingCartVM);
+
         }
         [HttpPost]
         [AutoValidateAntiforgeryToken]
@@ -273,11 +314,6 @@ namespace Ecomm_project_01.Areas.Customer.Controllers
             #endregion
             return RedirectToAction("OrderConfirmation", "Cart", new {id=ShoppingCartVM.OrderHeader.Id });
         }
-        private List<Address> GetAddresses(string userId)
-        {
-            return _unitOfWork.Address.GetAll(a => a.ApplicationUserId == userId).ToList();
-        }
-
         public IActionResult OrderConfirmation(int id)
         {
             return View(id);

@@ -1,0 +1,42 @@
+﻿@model Ecomm_project_01.Models.OrderHeader
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Details</title>
+</head>
+<body>
+    <h1>User Details</h1>
+    <h3>Order Information</h3>
+    <p><strong>Order ID:</strong> @Model.Id</p>
+    <p><strong>Transaction ID:</strong> @Model.TranscationId</p>
+    <p><strong>Order Date:</strong> @Model.OrderDate</p>
+    <p><strong>Order Status:</strong> @Model.OrderStatus</p>
+    <p><strong>Payment Status:</strong> @Model.PaymentStatus</p>
+
+    <h3>Product Information</h3>
+    <table class="table table-bordered table-striped-columns">
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Count</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var orderDetail in Model.OrderDetails)
+            {
+                    <tr>
+                        <td>@orderDetail.Product.Id</td>
+                        <td>@orderDetail.Product.Title</td>
+                        <td>@orderDetail.Price</td>
+                        <td>@orderDetail.Count</td>
+                        <td><img src="@orderDetail.Product.ImageUrl" alt="@orderDetail.Product.Title" width="100" height="100" /></td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>

@@ -44,6 +44,7 @@ namespace Ecomm_project_01.Models
 
         public CoverType CoverType { get; set;}
         public int SoldCount { get; set; }
+        public bool Discontinued { get; set; }
 
 
 

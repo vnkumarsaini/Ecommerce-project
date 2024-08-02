@@ -10,6 +10,9 @@ using Ecomm_project_01.DataAccess.Repository;
 using Ecomm_project_01.Utility;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
+using Ecomm_project_01.DataAccess.Data;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ecomm_project_01.Areas.Admin.Controllers
 {
@@ -20,11 +23,16 @@ namespace Ecomm_project_01.Areas.Admin.Controllers
     {
         private readonly iUnitOfWork _unitOfWork;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        
-        public ProductController(iUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
+        private readonly IEmailSender _emailSender;
+
+        public ProductController(iUnitOfWork unitOfWork,
+            IWebHostEnvironment webHostEnvironment,
+            IEmailSender emailSender
+            )
         {
             _unitOfWork = unitOfWork;
-            _webHostEnvironment= webHostEnvironment;
+            _webHostEnvironment = webHostEnvironment;
+            _emailSender = emailSender;
         }
 
         public IActionResult Index()
@@ -32,15 +40,15 @@ namespace Ecomm_project_01.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult Upsert(int? id) 
+        public IActionResult Upsert(int? id)
         {
             ProductVM productVM = new ProductVM()
             {
                 Product = new Product(),
                 CategoryList = _unitOfWork.Category.GetAll().Select(cl => new SelectListItem()
                 {
-                    Text= cl.Name,
-                    Value = cl.Id.ToString(),   
+                    Text = cl.Name,
+                    Value = cl.Id.ToString(),
                 }),
                 CoverTypeList = _unitOfWork.CoverType.GetAll().Select(ct => new SelectListItem()
                 {
@@ -48,7 +56,7 @@ namespace Ecomm_project_01.Areas.Admin.Controllers
                     Value = ct.Id.ToString(),
                 })
             };
-           if(id==null) return View(productVM);
+            if (id == null) return View(productVM);
             productVM.Product = _unitOfWork.Product.Get(id.GetValueOrDefault());
             if (productVM.Product == null) return BadRequest();
             return View(productVM);
@@ -66,21 +74,21 @@ namespace Ecomm_project_01.Areas.Admin.Controllers
                 {
                     var fileName = Guid.NewGuid().ToString();
                     var extension = Path.GetExtension(files[0].FileName);
-                    var uploads = Path.Combine(webRootPath,@"Images\Product");
-                    if(productVM.Product.Id != 0)
+                    var uploads = Path.Combine(webRootPath, @"Images\Product");
+                    if (productVM.Product.Id != 0)
                     {
                         var imageExists = _unitOfWork.Product.Get(productVM.Product.Id).ImageUrl;
                         productVM.Product.ImageUrl = imageExists;
                     }
-                    if(productVM.Product.ImageUrl != null)
+                    if (productVM.Product.ImageUrl != null)
                     {
-                        var imagePath = Path.Combine(webRootPath,productVM.Product.ImageUrl.Trim('\\'));
+                        var imagePath = Path.Combine(webRootPath, productVM.Product.ImageUrl.Trim('\\'));
                         if (System.IO.File.Exists(imagePath))
                         {
-                            System.IO.File.Delete(imagePath); 
+                            System.IO.File.Delete(imagePath);
                         }
                     }
-                    using(var fileStream = new FileStream(Path.Combine(uploads,fileName+extension),
+                    using (var fileStream = new FileStream(Path.Combine(uploads, fileName + extension),
                         FileMode.Create))
                     {
                         files[0].CopyTo(fileStream);
@@ -89,13 +97,13 @@ namespace Ecomm_project_01.Areas.Admin.Controllers
                 }
                 else
                 {
-                    if(productVM.Product.Id != 0)
+                    if (productVM.Product.Id != 0)
                     {
                         var imageExists = _unitOfWork.Product.Get(productVM.Product.Id).ImageUrl;
                         productVM.Product.ImageUrl = imageExists;
                     }
                 }
-                if(productVM.Product.Id == 0)
+                if (productVM.Product.Id == 0)
                     _unitOfWork.Product.Add(productVM.Product);
                 else
                     _unitOfWork.Product.Update(productVM.Product);
@@ -119,7 +127,7 @@ namespace Ecomm_project_01.Areas.Admin.Controllers
                         Value = ct.Id.ToString(),
                     })
                 };
-                if(productin!= 0)
+                if (productin != 0)
                 {
                     productVM.Product = _unitOfWork.Product.Get(productin);
                 }
@@ -127,9 +135,88 @@ namespace Ecomm_project_01.Areas.Admin.Controllers
             }
         }
 
+        public async Task<IActionResult> Discontinued(int id)
+        {
+            try
+            {
+                // Fetch pending orders for the discontinued product
+                var pendingOrders = _unitOfWork.OrderDetails
+                    .GetAll(od => od.ProductId == id && od.OrderHeader.OrderStatus == "Pending",
+                    includeProperties:"OrderHeader");
+                // Iterate over pending orders and send emails
+                foreach (var order in pendingOrders)
+                {
 
-        #region APIs
-        [HttpGet]
+                    var user = _unitOfWork.ApplicationUser.FirstOrDeafault(u => u.Id == order.OrderHeader.ApplicationUserId);
+                    // Craft email
+                    string subject = "Notice: Discontinued Product";
+                    string body = $@"
+            Dear Customer,
+            
+            We regret to inform you that the product you ordered is discontinued due to some reason. Your order will not be fulfilled.
+            
+            We apologize for any inconvenience this may cause.
+            
+            Sincerely,
+            Your Company
+        ";
+
+                    // Send email using your email sending mechanism
+                    await _emailSender.SendEmailAsync(user.Email, subject, body);
+                }
+            }
+            catch (Exception ex)
+            {
+                string errorMessage = ex.Message;
+                // Handle the exception appropriately, such as logging the error or displaying a message to the user
+            }
+            return RedirectToAction("Index");
+        }
+
+        //private async void SendDiscontinuedEmail(int orderId)
+        //{
+        //    try
+        //    {
+        //        // Fetch pending orders for the discontinued product
+        //        var pendingOrders = _unitOfWork.OrderDetails
+        //            .GetAll(od => od.ProductId == orderId && od.OrderHeader.OrderStatus == SD.OrderStatusPending)
+        //            .ToList();
+
+        //        // Iterate over pending orders and send emails
+        //        foreach (var order in pendingOrders)
+        //        {
+        //            if (order.OrderHeader != null && order.OrderHeader.ApplicationUser != null)
+        //            {
+        //                // Craft email
+        //                string recipientEmail = order.OrderHeader.ApplicationUser.Email;
+        //                string subject = "Notice: Discontinued Product";
+        //                string body = $@"
+        //    Dear {order.OrderHeader.ApplicationUser.Name},
+            
+        //    We regret to inform you that the product you ordered is discontinued due to some reason. Your order will not be fulfilled.
+            
+        //    We apologize for any inconvenience this may cause.
+            
+        //    Sincerely,
+        //    Your Company
+        //";
+
+        //                // Send email using your email sending mechanism
+        //                await _emailSender.SendEmailAsync(recipientEmail, subject, body);
+        //            }
+        //            else
+        //            {
+        //                // Log or handle the case where OrderHeader or ApplicationUser is null
+        //            }
+
+        //        }
+        //    }
+        //    catch(Exception ex) { }
+        //}
+    
+
+    #region APIs
+    [HttpGet]
         public IActionResult GetAll()
         {
            return Json(new { data = _unitOfWork.Product.GetAll() });

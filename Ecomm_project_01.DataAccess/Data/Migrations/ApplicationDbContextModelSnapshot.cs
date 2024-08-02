@@ -22,36 +22,6 @@ namespace Ecomm_project_01.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Ecomm_project_01.Models.Address", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PostalCode")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("State")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("StreetAddress")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Address");
-                });
-
             modelBuilder.Entity("Ecomm_project_01.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -246,6 +216,9 @@ namespace Ecomm_project_01.DataAccess.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Discontinued")
+                        .HasColumnType("bit");
 
                     b.Property<int>("ISBN")
                         .HasColumnType("int");
@@ -539,19 +512,10 @@ namespace Ecomm_project_01.DataAccess.Migrations
                     b.HasDiscriminator().HasValue("ApplicationUser");
                 });
 
-            modelBuilder.Entity("Ecomm_project_01.Models.Address", b =>
-                {
-                    b.HasOne("Ecomm_project_01.Models.ApplicationUser", "User")
-                        .WithMany("Addresses")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Ecomm_project_01.Models.OrderDetail", b =>
                 {
                     b.HasOne("Ecomm_project_01.Models.OrderHeader", "OrderHeader")
-                        .WithMany()
+                        .WithMany("OrderDetails")
                         .HasForeignKey("OrderHeaderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -672,9 +636,9 @@ namespace Ecomm_project_01.DataAccess.Migrations
                     b.Navigation("Company");
                 });
 
-            modelBuilder.Entity("Ecomm_project_01.Models.ApplicationUser", b =>
+            modelBuilder.Entity("Ecomm_project_01.Models.OrderHeader", b =>
                 {
-                    b.Navigation("Addresses");
+                    b.Navigation("OrderDetails");
                 });
 #pragma warning restore 612, 618
         }

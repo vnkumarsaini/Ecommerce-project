@@ -23,6 +23,7 @@ namespace Ecomm_project_01.DataAccess.Repository
             ShoppingCart= new ShoppingCartRepository(_Context);
             OrderHeader= new OrderHeaderRepository(_Context);
             OrderDetails= new OrderDetailsRepository(_Context);
+            Address= new AddressRepository(_Context);
 
             SPCall = new SPCall (_Context);
         }
@@ -38,6 +39,7 @@ namespace Ecomm_project_01.DataAccess.Repository
         public IShoppingCartRepository ShoppingCart { get; }
         public IOrderHeaderRepository OrderHeader { get; }
         public IOrderDetailsRepository OrderDetails { get; }
+        public IAddressRepository Address { get; }
 
         public void save()
         {

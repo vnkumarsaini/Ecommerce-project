@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Ecomm_project_01.Models.OrderHeader>
+@using Ecomm_project_01.Utility
+
+
+<div class="container rounded border">
+    <h2>Order Search</h2>
+    <form id="searchForm">
+        <label for="fromDate">From Date:</label>
+        <input type="date" id="fromDate" name="fromDate">
+
+        <label for="toDate">To Date:</label>
+        <input type="date" id="toDate" name="toDate">
+
+        <label for="orderStatus">Order Status:</label>
+        <select id="orderStatus" name="orderStatus">
+            <option value="">All</option>
+            <option value="@SD.OrderStatusApproved">Approved</option>
+            <option value="@SD.OrderStatusPending">Pending</option>
+            <option value="@SD.OrderStatusCancelled">Cancelled</option>
+            <option value="@SD.OrderStatusRefunded">Refunded</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <button type="submit" class="btn btn-info">Search</button>
+    </form>
+
+    <table id="tbldata" class="table table-bordered table-active table-striped">
+        <thead>
+            <tr>
+                <th>OrderId</th>
+                <th>Name</th>
+                <th>OrderDate</th>
+                <th>OrderStatus</th>
+                <th>OrderTotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.OrderDate</td>
+                    <td>@item.OrderStatus</td>
+                    <td>@item.OrderTotal</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+}
+<script>
+    document.getElementById("searchForm").addEventListener("submit", function(event) {
+        var fromDate = new Date(document.getElementById("fromDate").value);
+        var toDate = new Date(document.getElementById("toDate").value);
+
+        if (toDate <= fromDate) {
+            alert("To Date must be greater than From Date");
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+</script>
+}
+
+@* Script section for JavaScript *@

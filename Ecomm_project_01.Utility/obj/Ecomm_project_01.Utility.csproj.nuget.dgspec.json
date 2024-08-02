@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01.Utility\\Ecomm_project_01.Utility.csproj": {}
+    "E:\\file project\\Ecomm_project_01\\Ecomm_project_01\\Ecomm_project_01.Utility\\Ecomm_project_01.Utility.csproj": {}
   },
   "projects": {
-    "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01.Utility\\Ecomm_project_01.Utility.csproj": {
+    "E:\\file project\\Ecomm_project_01\\Ecomm_project_01\\Ecomm_project_01.Utility\\Ecomm_project_01.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01.Utility\\Ecomm_project_01.Utility.csproj",
+        "projectUniqueName": "E:\\file project\\Ecomm_project_01\\Ecomm_project_01\\Ecomm_project_01.Utility\\Ecomm_project_01.Utility.csproj",
         "projectName": "Ecomm_project_01.Utility",
-        "projectPath": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01.Utility\\Ecomm_project_01.Utility.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\OneDrive\\Documents\\Mvc Project\\Ecomm_project_01\\Ecomm_project_01.Utility\\obj\\",
+        "projectPath": "E:\\file project\\Ecomm_project_01\\Ecomm_project_01\\Ecomm_project_01.Utility\\Ecomm_project_01.Utility.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "E:\\file project\\Ecomm_project_01\\Ecomm_project_01\\Ecomm_project_01.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

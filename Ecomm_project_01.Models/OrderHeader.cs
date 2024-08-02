@@ -43,6 +43,7 @@ namespace Ecomm_project_01.Models
         [Required]
         [Display(Name = "Phone Number")]
         public String PhoneNumber { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
 
     }
 }
